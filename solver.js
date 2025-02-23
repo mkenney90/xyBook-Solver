@@ -1,5 +1,5 @@
 // This is a hypothetical program for a hypothetical problem
-// Definitely don't do this.
+// no promises made
 
 const radioButtons = document.querySelectorAll('input[type="radio"]');
 let index = 0;
