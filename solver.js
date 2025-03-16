@@ -7,7 +7,7 @@ function clickNextButton() {
 	if (index < radioButtons.length) {
 		radioButtons[index].click();
 		index++;
-		setTimeout(clickNextButton, 300);
+		setTimeout(clickNextButton, 250);
 		// adjust delay as needed
 	}
 }
@@ -19,7 +19,7 @@ function clickNextBox() {
 	if (index2 < x2Buttons.length) {
 		x2Buttons[index2].click();
 		index2++;
-		setTimeout(clickNextBox, 300);
+		setTimeout(clickNextBox, 250);
 		// adjust delay as needed
 	}
 }
@@ -34,7 +34,7 @@ function clickNextStartButton() {
 	if (index3 < startButtons.length) {
 		startButtons[index3].click();
 		index3++;
-		setTimeout(clickNextStartButton, 300);
+		setTimeout(clickNextStartButton, 250);
 		// adjust delay as needed
 	}
 }
@@ -47,7 +47,7 @@ function clickNextPlayButton() {
 	if (index4 < playButtons.length) {
 		playButtons[index4].click();
 		index4++;
-		setTimeout(clickNextPlayButton, 300);
+		setTimeout(clickNextPlayButton, 250);
 		// adjust delay as needed
 	}
 	let pauseButtons = document.querySelectorAll('button[aria-label="Pause"]');
@@ -68,7 +68,7 @@ function clickNextShowAnswerButton() {
 		setTimeout(showAnswerButtons[index5].click(), 200);
 		// adjust delay as needed 
         index5++; 
-        setTimeout(clickNextShowAnswerButton, 300);
+        setTimeout(clickNextShowAnswerButton, 250);
 		// adjust delay as needed
 	}
 }
@@ -84,7 +84,7 @@ function enterShortAnswers() {
         var shortAnswerSolution = shortAnswerQuestions[index6].querySelector('span.forfeit-answer').innerHTML.trim();
         shortAnswerInput.value = shortAnswerSolution;
         index6 ++;
-        setTimeout(enterShortAnswers, 300);
+        setTimeout(enterShortAnswers, 250);
     }
 }
 setTimeout(enterShortAnswers, 600);
@@ -102,6 +102,6 @@ function findCorrectAnswers() {
         multipleChoiceOptions[randChoice].click();
         index7 ++;
     }
-    setTimeout(findCorrectAnswers, 300);
+    setTimeout(findCorrectAnswers, 250);
 }
 findCorrectAnswers();
